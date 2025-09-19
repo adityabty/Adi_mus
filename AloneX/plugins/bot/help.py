@@ -82,8 +82,8 @@ async def helper_cb(client, CallbackQuery, _):
     cb = callback_data.split(None, 1)[1]
     keyboard = help_back_markup(_)
     if cb == "ab1":
-        await CallbackQuery.edit_message_text(helpers.REPO, reply_markup=keyboard)
-    elif cb == "hb1":
+        #await CallbackQuery.edit_message_text(helpers.REPO, reply_markup=keyboard)
+    #elif cb == "hb1":
         await CallbackQuery.edit_message_text(helpers.HELP_1, reply_markup=keyboard)
     elif cb == "hb2":
         await CallbackQuery.edit_message_text(helpers.HELP_2, reply_markup=keyboard)
